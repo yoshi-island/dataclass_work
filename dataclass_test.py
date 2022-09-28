@@ -9,7 +9,6 @@ class OreClass:
     birthday: date
 
     def __post_init__(self):
-        print("post_init")
         if self.gender not in ["male", "female", "unknown"]:
             raise ValueError("gender is no valid")
 
